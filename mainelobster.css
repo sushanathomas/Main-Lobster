@@ -3,8 +3,8 @@
      margin: 0;
     padding: 0;
 }
-body{
-    font-family: "lilita One", 'ninito san-serif'; 
+body {
+    font-family: "lilita One", san-serif;
 }
 /*
   ========================================
@@ -17,7 +17,7 @@ header, footer{
 header{
     width: 100%; 
     background: rgb(35, 59, 80);
-    height: 90px; 
+    height: auto; 
 }
 header h2{ 
     display: inline-block;
@@ -54,7 +54,6 @@ header p{
     text-align: center;
     width: 100%; 
     background:rgb(195, 80, 46); 
-    height: 30px; 
     padding-top: 5px 
 }
 /*
@@ -67,11 +66,10 @@ header p{
     background-size: 100% auto;
     background-repeat: no-repeat; 
     background-position: center; 
-    height: 350px;  
+    height: auto;  
 }
 .mainContainer section{ 
     width:60%; 
-    height: 300px; 
     margin-left: 50px;
     padding-top: 20px;  
 }
@@ -116,12 +114,11 @@ header p{
 */
 .menuLovers{
     background-color: rgb(244, 240, 228);
-    height: 500px;  
+    height: auto;  
     clear: both; 
 }
 .menuHaters{
-    padding: 50px; 
-    height: 390px;  
+    padding: 50px;  
 }
 .menuGood{
     margin: 15px; 
@@ -135,8 +132,7 @@ header p{
 }
 .menuHaters h2{
     color: rgb(35, 59, 80);
-    padding: 10px; 
-    height: 40px; 
+    padding: 10px;  
 }
 .menuHaters p{
     color: gray; 
@@ -150,7 +146,6 @@ header p{
 }
 .menuTable-1, .menuTable-2{
     width: 100%; 
-    height: 200px; 
     background: white;
     padding: 20px; 
     text-align: left;
@@ -168,7 +163,6 @@ header p{
     font-size: 10px;
 }
 .captionThis{
-    height: 50px; 
     text-align: center;
     color: gray; 
     font-family: "Nunito", sans-serif;
@@ -190,10 +184,9 @@ header p{
 */
 .theHowtoeat{
     background: rgb(35, 59, 80); 
-    height: 400px; 
+    height: auto; 
     padding: 50px; 
 }
-
 .lobster span{
     color: white; 
     font-family: "Nunito", sans-serif;
@@ -203,9 +196,7 @@ header p{
     padding-bottom: 5px; 
     gap: 20px 
 }
-
 .lobster h2{
-    height: 50px; 
     color: white; 
     padding-top: 5px;
     font-size: 35px;
@@ -214,12 +205,13 @@ header p{
 .lobster p{
     color: white; 
     font-family: "Nunito", sans-serif;
-    width: 70%; 
+    width: 100%; 
     margin-bottom: 10px; 
+    font-size: 14px;
+    padding: 20px; 
 }
 .lobster-1{
-    display: flex; 
-    height: 200px; 
+    display: flex;  
     width: 100%;
     gap: 20px;
     background: rgb(52, 75, 93);
@@ -235,12 +227,11 @@ header p{
     margin-bottom: 10px; 
     background: rgb(195, 80, 46);
     border: 1px solid white; 
-    height: 10px; 
     border-radius: 50px;
 }
 
 .lobster-1 section h3{
-    width: 20px 80%; 
+    width: 80%; 
     margin: 10px;  
     color: white;
     font-size: 14px; 
@@ -248,7 +239,6 @@ header p{
 
 .lobster-1 section p{
     width: 20px 60%;
-    height: 130px;
     margin-top: 15px; 
     color: white; 
     font-family: "Nunito", sans-serif;
@@ -325,13 +315,12 @@ header p{
   ========================================
 */
 footer{
-    height: 150px; 
+    height: auto;  
     background: rgb(35, 59, 80);
 }
 .footerSec{
     color: white; 
     display: flex; 
-    height: 150px; 
     gap: 20px; 
 }
 
@@ -348,4 +337,401 @@ footer{
     font-family: "Nunito", sans-serif; 
     font-size: 12px; 
     color: whitesmoke; 
+}
+
+/* =========================================================
+   RESPONSIVE - 1024PX
+   ========================================================= */
+
+@media screen and (max-width: 1024px) {
+
+    /* ---------------- HEADER / NAV ---------------- */
+
+    header h2 {
+        display: block;
+        margin: 0;
+        padding: 20px 40px 10px;
+    }
+
+    header nav {
+        float: none;
+        margin: 0;
+        padding-left: 35px;
+    }
+
+    header ul {
+        padding: 5px 0 15px;
+    }
+
+    header li {
+        display: block;
+        padding: 5px;
+        text-align: left;
+    }
+
+    header p {
+        height: auto;
+        padding: 8px 20px;
+    }
+
+
+    /* ---------------- HERO ---------------- */
+
+    .mainContainer {
+        height: auto;
+        min-height: 350px;
+        background-size: cover;
+    }
+
+    .mainContainer section {
+        width: 80%;
+        margin-left: 40px;
+        padding: 40px 0;
+    }
+
+    .mainContainer h1 {
+        width: 70%;
+    }
+
+    .mainContainer p {
+        width: 70%;
+    }
+
+
+    /* ---------------- MENU ---------------- */
+
+    .menuLovers {
+        height: auto;
+    }
+
+    .menuHaters {
+        padding: 40px;
+    }
+
+    .menuTable {
+        flex-direction: column;
+    }
+
+    .menuTable-1,
+    .menuTable-2 {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+
+    /* ---------------- HOW TO ---------------- */
+
+    .theHowtoeat {
+        height: auto;
+        padding: 40px;
+    }
+
+    .lobster p {
+        width: 85%;
+    }
+
+    .lobster-1 {
+        flex-wrap: wrap;
+    }
+
+    .lobster-1 section {
+        width: calc(50% - 10px);
+    }
+
+    .lobster-1 section p {
+        width: 100%;
+    }
+
+
+    /* ---------------- FIND THE WHARF ---------------- */
+
+    .lobsterLover {
+        height: auto;
+    }
+
+    .lobsterEat {
+        width: 100%;
+        height: auto;
+    }
+
+    .lobsterFind {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .lobsterFind section {
+        flex: none;
+        width: calc(50% - 10px);
+
+        min-height: 150px;
+    }
+
+
+    /* ---------------- FOOTER ---------------- */
+
+    footer {
+        height: auto;
+    }
+
+    .footerSec {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .footerSec section {
+        flex: none;
+        width: calc(50% - 60px);
+    }
+}
+
+
+
+/* =========================================================
+   RESPONSIVE - 768PX
+   ========================================================= */
+
+@media screen and (max-width: 768px) {
+
+    /* ---------------- HEADER ---------------- */
+
+    header h2 {
+        padding-left: 25px;
+    }
+
+    header nav {
+        padding-left: 20px;
+    }
+
+
+    /* ---------------- HERO ---------------- */
+
+    .mainContainer section {
+        width: 90%;
+        margin-left: 25px;
+        padding: 35px 0;
+    }
+
+    .mainContainer h1 {
+        width: 85%;
+        font-size: 40px;
+    }
+
+    .mainContainer p {
+        width: 80%;
+    }
+
+
+    /* ---------------- MENU ---------------- */
+
+    .menuHaters {
+        padding: 30px 20px;
+    }
+
+    .menuGood {
+        margin: 10px;
+    }
+
+    .menuTable {
+        margin: 10px;
+    }
+
+
+    /* ---------------- HOW TO ---------------- */
+
+    .theHowtoeat {
+        padding: 30px 20px;
+    }
+
+    .lobster h2 {
+        height: auto;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .lobster p {
+        width: 100%;
+    }
+
+    .lobster-1 {
+        flex-direction: column;
+    }
+
+    .lobster-1 section {
+        width: 100%;
+    }
+
+
+    /* ---------------- FIND THE WHARF ---------------- */
+
+    .lobsterFind {
+        flex-direction: column;
+    }
+
+    .lobsterFind section {
+        width: 100%;
+    }
+
+
+    /* ---------------- FOOTER ---------------- */
+
+    .footerSec {
+        flex-direction: column;
+    }
+
+    .footerSec section {
+        width: auto;
+        margin: 20px 30px;
+    }
+}
+
+/* =========================================================
+   RESPONSIVE - 600PX
+   ========================================================= */
+
+@media screen and (max-width: 600px) {
+
+    /* ---------------- HEADER ---------------- */
+
+    header h2 {
+        font-size: 18px;
+        padding: 15px 20px;
+    }
+
+    /* Completely hide navigation at 600px */
+    header nav {
+        display: none;
+    }
+
+    header p {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    /* ---------------- HERO ---------------- */
+
+    .mainContainer {
+        min-height: 420px;
+    }
+
+    .mainContainer section {
+        width: 100%;
+        margin-left: 0;
+        padding: 35px 20px;
+    }
+
+    .mainContainer h1 {
+        width: 100%;
+        font-size: 34px;
+    }
+
+    .mainContainer p {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .mainContainer button {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* ---------------- MENU ---------------- */
+
+    .menuHaters {
+        padding: 30px 15px;
+    }
+
+    .menuHaters h2 {
+        height: auto;
+        padding-left: 0;
+    }
+
+    .menuGood {
+        margin: 0 0 20px;
+    }
+
+    .menuTable {
+        margin: 0;
+        gap: 20px;
+    }
+
+    .menuTable-1,
+    .menuTable-2 {
+        padding: 15px;
+    }
+
+    .captionThis {
+        height: auto;
+        padding: 20px;
+        line-height: 1.5;
+    }
+
+    /* ---------------- HOW TO ---------------- */
+
+    .theHowtoeat {
+        padding: 30px 15px;
+    }
+
+    .lobster h2 {
+        font-size: 28px;
+    }
+
+    .lobster-1 {
+        gap: 15px;
+    }
+
+    .lobster-1 section {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .lobster-1 section h3 {
+        width: auto;
+    }
+
+    .lobster-1 section p {
+        padding: 10px;
+        margin-top: 5px;
+    }
+
+    /* ---------------- FIND THE WHARF ---------------- */
+
+    .eatMore {
+        padding: 20px 15px;
+    }
+
+    .lobsterEat span {
+        margin-left: 0;
+    }
+
+    .lobsterEat h2 {
+        margin: 10px 0 20px;
+        height: auto;
+        font-size: 28px;
+    }
+
+    .lobsterFind {
+        gap: 15px;
+    }
+
+    .lobsterFind section {
+        height: auto;
+    }
+
+    /* ---------------- FOOTER ---------------- */
+
+    footer {
+        height: auto;
+    }
+
+    .footerSec {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .footerSec section {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
 }
